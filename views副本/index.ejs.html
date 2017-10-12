@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<%include head.ejs%>
+  <script charset="UTF-8" type="text/javascript" src="js/ejs.min.js"></script>
+
+<body> 
+  <%include header.ejs%>
+  <section class="container">
+    <div class="waterfall"> 
+    </div>  
+  </section>
+
+ 
+  
+    <div class="menu"></div>
+
+   
+ <script   type="text/template" id="menuTemplate">
+      <%if(data && data.length>0){%>
+        <ul>
+            <%data.forEach(function(curData,index){%>
+            <%var cName=index===0?'bg':null;%>
+            <li class="<%=cName%>">
+                <a href="#<%=curData.tag%>" columnId="<%=curData.columnId%>">
+                <%=curData.name%>
+                <i class="triangle">
+                    <span class="triLeft"></span>
+                    <span class="triRight"></span>
+                </i>
+                </a>
+            </li>
+            <%});%>
+        </ul>
+        <%}%>
+ 
+ 
+  <%include foot.ejs%>
+
+  <script>
+  //->使用jQuery的AJAX获取数据
+  $.ajax({
+        url:'http://127.0.0.1:3333/test_data',
+        type:'get',
+        dataType:'json',
+        success:function(data){
+          console.log(data)
+            //->data:就是我们从服务器获取的数据,然后执行第四步的bindHTML方法
+            //->假设我们获取的数据格式如下
+   
+           bindHTML(data);
+           //html = ejs.render('<%= people.join(", "); %>', {people: people});
+         }
+       })
+
+  function bindHTML(data){
+
+        //->首先把页面中模板的innerHTML获取到
+       var str=$("#menuTemplate").html();
+       
+
+        //->然后把str和data交给EJS解析处理，得到我们最终想要的字符串
+        //html = new EJS({url: '/template.ejs'}).render(data)
+        var html = ejs.render(str.data);
+        //var result=ejs.render(str, {data: data});
+
+        //->最后把获取的HTML放入到MENU中
+        $(".menu").html(result);
+    }
+        
+
+  $('.waterfall')
+        .data('bootstrap-waterfall-template', $('#waterfall-template').html())
+        .waterfall();
+        //$shareconfig = {sites: ['qzone', 'qq', 'weibo','wechat']}
+        //$('#socialshare').share($shareconfig);
+        //$('#socialshare').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+        // var $config = { 
+          //  mobileSites:['weibo','qq','qzone','tencent']
+        //};
+        //$('.social-share').share($config); 
+      </script>   
+</body>
+</html>
+
+ 

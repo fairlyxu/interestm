@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=0" charset="utf-8" />
+    <title>
+        interestm
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="description" content="mobile first, app, web app, responsive, admin dashboard, flat, flat ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/javascripts/4dage.js"></script>
+    <style type="text/css">
+    
+    .thumbnail{
+    	    border: 0px solid #ffffff;
+    	    padding: 0px
+
+    }
+    .login-right-content {
+        position: absolute top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 90%;
+    }
+    
+    .login-logo {
+        margin: 0 auto;
+        height: 55px;
+        width: 55px;
+        background: url(img/m_logo.png) no-repeat;
+        background-size: cover;
+    }
+    
+    .login-text {
+        margin: 5px auto 30px;
+        text-align: center;
+    }
+    .login-text-main {
+        margin-bottom: 26px;
+        font-weight: bold;
+        font-size: 28px;
+        color: #555;
+    }
+    .login-text-second {
+        font-size: 14px;
+        color: #b5b5b5;
+        font-weight: bold
+    }
+    .passwordForgotten {
+        margin: 10px auto 8px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .line {
+        margin: 0 auto;
+        width: 50%;
+        height: 1px;
+        background-color: #ccc;
+    }
+    
+    .signUpPrompt {
+        margin: 8px auto;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold
+    }
+    
+    .link {
+        cursor: pointer;
+        color: #717171;
+        &:hover;
+        color: #ccc
+    }
+    
+    #submit {
+        margin: 0 auto;
+        text-align: center
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container gallery">
+        <div class="row m-large gallery">
+            <div class="col-lg-5 col-11 col-offset-1">
+                <a href="img/m_bg.png" class="thumbnail" target="_blank">
+                	<img src="img/m_bg.png" style="min-height: 400px;"></a>
+            </div>
+            <div class="col-lg-4 col-11">
+                <div class="login-logo"></div>
+                <div class="login-text">
+                    <div class="login-text-main">
+                        <%= mainTitle %>
+                    </div>
+                    <div class="login-text-second">
+                        <%= secondTitle %>
+                    </div>
+                </div>
+                <form class="form-horizontal" method="get" data-validate="parsley" action="index">
+                    <div class="form-group">
+                        <div class="username">
+                            <input type="text" name="email" placeholder="Email" class="bg-focus form-control" data-required="true" data-type="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Password" class="bg-focus form-control">
+                    </div>
+                    <div class="form-group" id="submit">
+                        <input type="submit" value="登录" class="btn btn-danger" style="width: 50%;">
+                    </div>
+                </form>
+                <div class="passwordForgotten link">忘记密码？</div>
+                <div class="line"></div>
+                <div class="signUpPrompt">
+                    没有账号? <span class="link">点击注册</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/ui/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/ui/bootstrap.js"></script>
+    <!-- app -->
+    <script src="js/ui/app.js"></script>
+    <script src="js/ui/app.plugin.js"></script>
+    <script src="js/ui/app.data.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+button{
+    background: rgba(0, 0, 0, 0);
+    border:0px #ff0000 solid;
+    background-size: 100% 100%;
+    margin: 0.5em ;
+}
+
+.spritespin-preload {
+        background : url('img/ajax-loader.gif') no-repeat 50% 50%;
+      }
+</style>
+<head>
+    <%include head.html%>
+    <title>观景台建筑结构展示</title>
+</head>
+<body class="">
+    <div class="hidden-xs" >
+        <section class="opr-icon-left">
+            <button class="top-icon oprclose"><em>&nbsp;</em> </button>
+            <button class="mid-icon oprprev"><em>&nbsp;</em> </button>
+            <button class="bottom-icon oprret"><em>&nbsp;</em> </button>
+        </section>
+        <section class="opr-icon-right">  
+            <button class="top-icon oprsave"><em>&nbsp;</em> </button>
+            <button class="mid-icon oprnext"><em>&nbsp;</em> </button>
+            <button class="bottom-icon oprshare"><em>&nbsp;</em> </button>
+        </section>
+    </div>
+    <div class="container">
+        <div class="row">
+            <section class="col-xs-12 visible-xs navbar-fixed-top opr-icon-top">    
+                <button class="left-icon oprclose"><em>&nbsp;</em> </button>
+                <button class="center-icon oprprev"><em>&nbsp;</em> </button>
+                <button class="right-icon oprret"><em>&nbsp;</em> </button>  
+            </section>
+            <section class="col-xs-12 col-md-12s"  >
+                <strong>360 spin with 36 images / 36 frames</strong>
+                <div id="360frames" class="center-block"></div>
+            </section>  
+            <section class="col-xs-12 visible-xs navbar-fixed-bottom opr-icon-bottom">
+                <button class="left-icon oprsave"><em>&nbsp;</em> </button>
+                <button class="center-icon oprnext"><em>&nbsp;</em> </button>
+                <button class="right-icon oprshare"><em>&nbsp;</em> </button>  
+            </section>
+        </div>  
+    </div>
+</body>
+<%include foot.html%>
+<script src="js/spritespin.js" type="text/javascript"></script>
+<script>
+var frames = [];
+  function onWindowResize() {
+         $("#360frames").spritespin({
+            width     :  window.innerWidth*0.55, //900,
+            height    :  window.innerHeight*0.9,//500,
+          });
+  }
+  $(document).ready(function () {
+    var data1= reqData("loop_image");
+    $.each(data1['datalist'], function(i,val){
+      frames.push(val['imageUrl']);
+    });
+    $("#360frames").spritespin({
+                  width     :  window.innerWidth*0.55, //900,
+                  height    :  window.innerHeight*0.9,//500,
+                  frames    : frames.length,
+                  behavior  : "drag", // "hold"
+                  module    : "360",
+                  sense     : -1,
+                  source    : frames,
+                  animate   : true,
+                  loop      : false,
+                  frameWrap : true,
+                  frameStep : 1,
+                  frameTime : 30,
+                  enableCanvas : true
+                });
+    window.addEventListener('resize', onWindowResize, false);
+  });
+
+</script>
+</html>

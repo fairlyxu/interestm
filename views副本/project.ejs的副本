@@ -1,0 +1,62 @@
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="description" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+   <title>project</title>
+  <link rel="stylesheet" href="css/water/main.css" /> 
+  <link rel="stylesheet" href="css/style.css" /> 
+ </head> 
+ <body> 
+  <div class="container col-xs-12 col-md-6 col-md-offset-4"> 
+    <header id="header"> 
+      <a class="navbar-brand pull-right" href="#" >
+        <img src="img/save2.png" alt="logo" class="m_logo" >
+      </a>
+      <a class="navbar-brand" href="#" >
+        <img src="img/m_logo.png" alt="logo" class="m_logo" >
+      </a>
+    </header>
+    <section class="waterfall"> 
+    </section>  
+  </div>  
+  <script id="waterfall-template" type=text/template>
+    <% materialItems.forEach(function(item){%>
+    <ul class="list-group">
+            <li class="list-group-item">
+                <a href=<%=item.link %>> <img src=<%=item.url %> alt=<%=item.imageName %> > </a>
+                <img src=<%=item.typeImg %>  class="logotype topleft"> 
+            </li>
+            <li class="list-group-item">
+                <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+            </li>
+            <li class="list-group-item">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="javascript:;"> <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" /> </a>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading">Liber</h5> <small>I love this pin!</small>
+                    </div>
+                </div>
+            </li>
+    </ul>
+    <% }) %>
+  </script>
+    <script src="js/water/vendor.js"></script>
+    <script src="js/water/bootstrap-waterfall.js"></script>
+    <script>
+    $('.waterfall')
+        .data('bootstrap-waterfall-template', $('#waterfall-template').html())
+        .waterfall();
+    </script>
+</body>
+</html>
+<script>
+var $config = { 
+    mobileSites:['weibo','qq','qzone','tencent']
+   };
+//$('.social-share').share($config);
+</script>
