@@ -2,25 +2,10 @@
 <html lang="en">
 <style type="text/css">
 @media screen and (max-width: 555px){ 
-    .left-right-icon{
-        display: none;
-    }
-    .top-bottom-icon{
-        display: block;
-    } 
     #loopmodel{
         margin-top: 10%;
         margin-bottom: 10%;
         max-height: 80%!important;
-    }
-    
-}
-@media screen and (min-width:556px) {
-    .left-right-icon{
-        display: block;
-    }
-    .top-bottom-icon{
-        display: none
     }
 }
 </style>
@@ -51,7 +36,6 @@
                 <a href="/project" class="right-icon"><img src="img/return.png"></a>
             </section>
             <section class="col-xs-12 col-md-12s" id="loopmodel" >
-                <strong>360 spin with 36 images / 36 frames</strong>
                 <div id="360frames" class="center-block"></div>
             </section>  
             <section class="col-xs-12 top-bottom-icon navbar-fixed-bottom opr-icon-bottom">
@@ -84,7 +68,7 @@ var frames = [];
     });
     $("#360frames").spritespin({
                   width     :  window.innerWidth*0.6, //900,
-                  height    :  window.innerHeight*0.8,//500,
+                  height    :  window.innerHeight*0.9,//500,
                   frames    : frames.length,
                   behavior  : "drag", // "hold"
                   module    : "360",

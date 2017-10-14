@@ -14,6 +14,7 @@
     <title>观景台建筑结构展示</title>
 </head>
 <body class="secondbody">
+    <%include modal.html%>
     <div class="left-right-icon" >
         <section class="opr-icon-left">
             <a href="/" class="top-icon"><img src="img/close.png"></a>
@@ -64,6 +65,7 @@
 <script src="js/swiper.min.js"></script>
 <script>
 $(document).ready(function (){
+    initSocial(".social-position");
     var data1= reqData("common_image");
     var html = template('imgs-template', data1);
     $(".swiper-wrapper").html(html);  

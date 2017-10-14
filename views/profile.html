@@ -2,92 +2,7 @@
 <!DOCTYPE html>
 <html>
 <%include head.html%>
-
-<style type="text/css">
-   .name{
-    color: #555;
-    font-size: 48px;
-    letter-spacing: -1.75px;
-    line-height: 56px;
-    word-spacing: -2.75px;
-  }
-.block {
-    display: block;
-}
-.dark-gray {
-    color: #555;
-}
-.des{
-  color: #555;
-  font-size: 20px;
-}
-.px1{
-  float: left;
-  margin-right: 1em;
-}
-.label{
-  padding-left: 0;
-  color: rgb(167,167,167);
-}
-@media (min-width:1200px) {
-  .col-md-3 {
-    width: 23%;
-    margin: 2px;
-  }
-}
-@media (min-width:200px) {
-  .col-xs-4{
-    padding-left: 1px;
-    padding-right: 1px;
-  }
-  .pin{
-  height: 280px;  
-  border-radius: 0.5em;
-  border: 0px #000 solid;
-  margin:0.5em;
-}
-.pin:hover{
-    background: rgb(235,235,235);
-}
-.pin-box{ 
-  margin-top: 10px;
-  height: 200px;
-}
-.img-box:{
-  padding-top:10px; 
-}
-.img-box img{
-  width: 100%;
-  max-height: 100px;
-  padding: 3px;
-
-}
-.note-box{
-  padding-top: 5px;
-  height: 50px;
-  text-align: center;
-  border-radius: 0.5em;
-
-  border: 0px #000 solid;
-  margin: 10px 0 ;
-}
-.note-box p{
-  margin: 0;
-}
-}
-.box-title{
-  padding: 5px;
-  word-spacing: 0;
-  font-size: 20px;
-  font-weight: bold;
-  max-width: 100px;
-  text-align: center;
-  border-radius: 0.5em;
-}
- .box-title:hover{
-    background: rgb(235,235,235);
- }
-</style>
+<link rel="stylesheet" href="css/profilestyle.css" /> 
 <body>
   <%include header.html%>
   <section class="container" style="width: 90%;">
@@ -124,234 +39,52 @@
     <hr>
     <div class="row">
       <p class="box-title"> my pin</p>
-        <section class="pin col-xs-12 col-sm-6 col-md-3">
-            <div class="pin-box" style="overflow: hidden;">
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/1.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/2.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/3.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/4.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/5.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/6.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/7.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/8.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/9.jpg" /> </a>
-              </div>  
-            </div>
-            <div class="note-box">
-              <p><strong>palace</strong> </p>
-              <p>76 pins </p>
-            </div>
-        </section>
-        <section class="pin col-xs-12 col-sm-6 col-md-3">
-            <div class="pin-box" style=" overflow: hidden;">
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/1.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/2.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/3.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/4.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/5.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/6.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/7.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/8.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/9.jpg" /> </a>
-              </div>  
-            </div>
-             <div class="note-box">
-                 <p><strong>palace</strong> </p>
-                 <p>76 pins </p>
-            </div>
-        </section> 
-        <section class="pin col-xs-12 col-sm-6 col-md-3">
-            <div class="pin-box" style=" overflow: hidden;">
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/1.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/2.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/3.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/4.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/5.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/6.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/7.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/8.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/9.jpg" /> </a>
-              </div>  
-            </div>
-             <div class="note-box">
-                 <p><strong>palace</strong> </p>
-                 <p>76 pins </p>
-            </div>
-        </section>
-        <section class="pin col-xs-12 col-sm-6 col-md-3">
-            <div class="pin-box" style=" overflow: hidden;">
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/1.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/2.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/3.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/4.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/5.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/6.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/7.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/8.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/9.jpg" /> </a>
-              </div>  
-            </div>
-             <div class="note-box">
-                 <p><strong>palace</strong> </p>
-                 <p>76 pins </p>
-            </div>
-        </section>  
+      <div class="savedproject-box"></div>
     </div>
     <hr>
     <div class="row">
       <p class="box-title"> my work</p>
-      <section class="pin col-xs-12 col-sm-6 col-md-3">
-            <div class="pin-box" style=" overflow: hidden;">
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/1.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/2.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/3.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/4.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/5.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/6.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/7.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/8.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/9.jpg" /> </a>
-              </div>  
-            </div>
-             <div class="note-box">
-                 <p><strong>palace</strong> </p>
-                 <p>76 pins </p>
-            </div>
-      </section>
-      <section class="pin col-xs-12 col-sm-6 col-md-3">
-            <div class="pin-box" style=" overflow: hidden;">
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/1.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/2.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/3.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/4.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/5.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/6.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/7.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box" >
-                 <a href="javascript:;"> <img src="images/8.jpg" /> </a>
-              </div>
-              <div class="col-xs-4 img-box">
-                 <a href="javascript:;"> <img src="images/9.jpg" /> </a>
-              </div>  
-            </div>
-             <div class="note-box">
-                 <p><strong>palace</strong> </p>
-                 <p>76 pins </p>
-            </div>
-      </section>
-    </div>
+      <div class="createddproject-box"></div>
+    </div> 
   </section>
 <%include foot.html%>
+<!-- 一个box  一个 project-->
+<script id="proj-template" type="text/template">
+ {{each datalist value}} 
+  <section class="pin col-xs-12 col-sm-6 col-md-3">
+    <div class="pin-box savedproject-box" style="overflow: hidden;">
+      <a href={{value.link}}> <img src={{value.imageUrl}} alt={{value.imageName}} class="center-block"/> </a>
+    </div>
+    <div class="note-box">
+      <p><strong>{{value.projectName}}</strong> </p>
+      <p>{{value.projectDesc}}</p>
+    </div>
+  </section>
+  {{/each}}
+</script>
+<!-- project 包 根据category分类-->
+<script id="proj-cate-template" type="text/template">
+  {{each datalist value}} 
+  <div class="col-xs-4 img-box">
+    <a href={{value.link}}> <img src={{value.imageUrl}} alt={{value.imageName}}/> </a>
+  </div>
+  {{/each}}
+</script>
 <script type="text/javascript">
   $(document).ready(function () {
-    $.ajax({
-        url:'http://127.0.0.1:3333/user_info',
-        type:'get',
-        dataType:'json',
-        success:function(data){
-        console.log(data)
-         }
-       })
-  });
+  var param = getQueryString();
+    var data= reqData("user_info?"+param);
+    var savedata={
+      "datalist":data["datalist"]["savedProjects"]
+    }
+    var createdata={
+      "datalist":data["datalist"]["createdProjects"]
+    }
+    var createdhtml = template('proj-template', createdata);
+    var savedhtml = template('proj-template', savedata);
+    $(".savedproject-box").html(savedhtml);
+    $(".createddproject-box").html(createdhtml);
+   });
 </script>
 </body>
 </html>

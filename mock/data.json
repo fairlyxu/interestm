@@ -1,6 +1,846 @@
 
 
 {
+    "user_info":{
+        "success": true,
+        "code": 200,
+        "desc": "操作成功",
+        "data": {
+            "userId": 1,
+            "nickName": "CPfive",
+            "headImg": "/interestm/img/headImg/CPfive.jpg",
+            "tel": "12345678900",
+            "email": "syzh1991@126.com",
+            "gender": "male",
+            "role": 1,
+            "messages": null,
+            "createdProjects": [
+                {
+                    "projectId":1,
+                    "projectName":"p1",
+                    "projectDesc":"测试",
+                    "imageName":"p1",
+                    "imageUrl":"images/1.jpg",
+                    "width":100,
+                    "height":100,
+                    "link":"/project?projectId=1",
+                    "uploadTime":1507038387000,
+                    "categoryId":1,
+                    "authorList": [
+                            {
+                                "userId": 1,
+                                "nickName": "CPfive",
+                                "headImg": "/interestm/img/headImg/CPfive.jpg",
+                                "tel": "12345678900",
+                                "email": "syzh1991@126.com",
+                                "gender": "male",
+                                "role": 1,
+                                "messages": null,
+                                "createdProjects": null,
+                                "savedProjects": null
+                            },
+                            {
+                                "userId": 3,
+                                "nickName": "hustcp5",
+                                "headImg": "/interestm/img/headImg/CPfive.jpg",
+                                "tel": "12345678902",
+                                "email": "test1@126.com",
+                                "gender": "male",
+                                "role": 1,
+                                "messages": null,
+                                "createdProjects": null,
+                                "savedProjects": null
+                            }
+                        ],
+                        "saved": false
+                },
+                {
+                    "projectId":2,
+                    "projectName":"p2",
+                    "projectDesc":"p2",
+                    "imageName":"p2",
+                    "imageUrl":"images/2.jpg",
+                    "width":100,
+                    "height":100,
+                    "link":"/project?projectId=2",
+                    "uploadTime":"2017-09-02",
+                    "categoryId":1,
+                    "authorList":[
+                        {
+                            "userId":1000,
+                            "nickName":"Tom",
+                            "headImg":"images/avatar.jpg",
+                            "tel":"123456789",
+                            "email":"admin@interestm.com",
+                            "gender":"F",
+                            "role":"designer"
+                        }
+                    ]
+                }
+            ],
+            "savedProjects": [
+                {
+                    "projectId":1,
+                    "projectName":"p1",
+                    "projectDesc":"测试",
+                    "imageName":"p1",
+                    "imageUrl":"images/1.jpg",
+                    "width":100,
+                    "height":100,
+                    "link":"/project?projectId=1",
+                    "uploadTime":1507038387000,
+                    "categoryId":1,
+                    "authorList": [
+                            {
+                                "userId": 1,
+                                "nickName": "CPfive",
+                                "headImg": "/interestm/img/headImg/CPfive.jpg",
+                                "tel": "12345678900",
+                                "email": "syzh1991@126.com",
+                                "gender": "male",
+                                "role": 1,
+                                "messages": null,
+                                "createdProjects": null,
+                                "savedProjects": null
+                            },
+                            {
+                                "userId": 3,
+                                "nickName": "hustcp5",
+                                "headImg": "/interestm/img/headImg/CPfive.jpg",
+                                "tel": "12345678902",
+                                "email": "test1@126.com",
+                                "gender": "male",
+                                "role": 1,
+                                "messages": null,
+                                "createdProjects": null,
+                                "savedProjects": null
+                            }
+                        ],
+                        "saved": false
+                },
+                {
+                    "projectId":2,
+                    "projectName":"p2",
+                    "projectDesc":"p2",
+                    "imageName":"p2",
+                    "imageUrl":"images/2.jpg",
+                    "width":100,
+                    "height":100,
+                    "link":"/project?projectId=1",
+                    "uploadTime":"2017-09-02",
+                    "categoryId":1,
+                    "authorList":[
+                        {
+                            "userId":1000,
+                            "nickName":"Tom",
+                            "headImg":"images/avatar.jpg",
+                            "tel":"123456789",
+                            "email":"admin@interestm.com",
+                            "gender":"F",
+                            "role":"designer"
+                        }
+                    ]
+                },
+                {
+                    "projectId":3,
+                    "projectName":"p3",
+                    "projectDesc":"p3",
+                    "imageName":"p3",
+                    "imageUrl":"images/3.jpg",
+                    "width":100,
+                    "height":100,
+                    "link":"/project?projectId=3",
+                    "uploadTime":"2017-09-02",
+                    "categoryId":3,
+                    "authorList":[
+                        {
+                            "userId":1000,
+                            "nickName":"Tom",
+                            "headImg":"images/avatar.jpg",
+                            "tel":"123456789",
+                            "email":"admin@interestm.com",
+                            "gender":"F",
+                            "role":"designer"
+                        }
+                    ]
+                },
+                {
+                    "projectId":4,
+                    "projectName":"p4",
+                    "projectDesc":"p4",
+                    "imageName":"p4",
+                    "imageUrl":"images/4.jpg",
+                    "width":100,
+                    "height":100,
+                    "link":"/project?projectId=4",
+                    "uploadTime":"2017-09-02",
+                    "categoryId":1,
+                    "authorList":[
+                        {
+                            "userId":1000,
+                            "nickName":"Tom",
+                            "headImg":"images/avatar.jpg",
+                            "tel":"123456789",
+                            "email":"admin@interestm.com",
+                            "gender":"F",
+                            "role":"designer"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "login":{
+        "success": true,
+        "code": 200,
+        "desc": "操作成功",
+        "data": {
+            "userId": 1,
+            "nickName": "CPfive",
+            "headImg": "/interestm/img/headImg/CPfive.jpg",
+            "tel": "12345678900",
+            "email": "syzh1991@126.com",
+            "gender": "male",
+            "role": 1,
+            "messages": [],
+            "createdProjects": [
+                {
+                    "projectId": 1,
+                    "projectName": "project1",
+                    "projectDesc": "测试",
+                    "imageName": null,
+                    "imageUrl": "/Users/syzh/Documents/interestm/project1/level1/001jpgflogo01.jpg",
+                    "width": 320,
+                    "height": 320,
+                    "link": "http://www.baidu.com",
+                    "uploadTime": 1507038387000,
+                    "categoryId": 0,
+                    "authorList": [
+                        {
+                            "userId": 1,
+                            "nickName": "CPfive",
+                            "headImg": "/interestm/img/headImg/CPfive.jpg",
+                            "tel": "12345678900",
+                            "email": "syzh1991@126.com",
+                            "gender": "male",
+                            "role": 1,
+                            "messages": null,
+                            "createdProjects": null,
+                            "savedProjects": null
+                        },
+                        {
+                            "userId": 3,
+                            "nickName": "hustcp5",
+                            "headImg": "/interestm/img/headImg/CPfive.jpg",
+                            "tel": "12345678902",
+                            "email": "test1@126.com",
+                            "gender": "male",
+                            "role": 1,
+                            "messages": null,
+                            "createdProjects": null,
+                            "savedProjects": null
+                        }
+                    ],
+                    "saved": false
+                }
+            ],
+            "savedProjects": []
+        }
+    },
+    "get_project_list":{
+        "success": true,
+        "code": 200,
+        "desc": "操作成功",
+        "data": [
+            {
+                "projectId":1,
+                "projectName":"p1",
+                "projectDesc":"测试",
+                "imageName":"p1",
+                "imageUrl":"images/1.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project?projectId=1",
+                "uploadTime":1507038387000,
+                "categoryId":1,
+                "authorList": [
+                        {
+                            "userId": 1,
+                            "nickName": "CPfive",
+                            "headImg": "/interestm/img/headImg/CPfive.jpg",
+                            "tel": "12345678900",
+                            "email": "syzh1991@126.com",
+                            "gender": "male",
+                            "role": 1,
+                            "messages": null,
+                            "createdProjects": null,
+                            "savedProjects": null
+                        },
+                        {
+                            "userId": 3,
+                            "nickName": "hustcp5",
+                            "headImg": "/interestm/img/headImg/CPfive.jpg",
+                            "tel": "12345678902",
+                            "email": "test1@126.com",
+                            "gender": "male",
+                            "role": 1,
+                            "messages": null,
+                            "createdProjects": null,
+                            "savedProjects": null
+                        }
+                    ],
+                "saved": false
+            },
+            {
+                "projectId":2,
+                "projectName":"p2",
+                "projectDesc":"p2",
+                "imageName":"p2",
+                "imageUrl":"images/2.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project?projectId=2",
+                "uploadTime":"2017-09-02",
+                "categoryId":1,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ],
+                "saved": false
+            },
+            {
+                "projectId":3,
+                "projectName":"p3",
+                "projectDesc":"p3",
+                "imageName":"p3",
+                "imageUrl":"images/3.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project?projectId=3",
+                "uploadTime":"2017-09-02",
+                "categoryId":3,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ],
+                "saved": false
+            },
+            {
+                "projectId":4,
+                "projectName":"p4",
+                "projectDesc":"p4",
+                "imageName":"p4",
+                "imageUrl":"images/4.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project?projectId=4",
+                "uploadTime":"2017-09-02",
+                "categoryId":1,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ],
+                "saved": false
+            },
+            {
+                "projectId":5,
+                "projectName":"p5",
+                "projectDesc":"p5",
+                "imageName":"p1",
+                "imageUrl":"images/1.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project?projectId=5",
+                "uploadTime":"2017-09-02",
+                "categoryId":5,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ],
+                "saved": false
+            },
+            {
+                "projectId":6,
+                "projectName":"p6",
+                "projectDesc":"p6",
+                "imageName":"p6",
+                "imageUrl":"images/6.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":6,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ],
+                "saved": false
+            },
+            {
+                "projectId":7,
+                "projectName":"p7",
+                "projectDesc":"p7",
+                "imageName":"p7",
+                "imageUrl":"images/7.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":7,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":8,
+                "projectName":"p8",
+                "projectDesc":"p8",
+                "imageName":"p8",
+                "imageUrl":"images/8.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":8,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":9,
+                "projectName":"p9",
+                "projectDesc":"p9",
+                "imageName":"p9",
+                "imageUrl":"images/9.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":9,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":10,
+                "projectName":"p10",
+                "projectDesc":"p10",
+                "imageName":"p10",
+                "imageUrl":"images/10.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":10,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":11,
+                "projectName":"p11",
+                "projectDesc":"p11",
+                "imageName":"p11",
+                "imageUrl":"images/11.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":1,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":12,
+                "projectName":"p12",
+                "projectDesc":"p12",
+                "imageName":"p12",
+                "imageUrl":"images/12.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":12,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":13,
+                "projectName":"p13",
+                "projectDesc":"p13",
+                "imageName":"p13",
+                "imageUrl":"images/13.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":13,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":14,
+                "projectName":"p14",
+                "projectDesc":"p14",
+                "imageName":"p14",
+                "imageUrl":"images/14.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":1,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":15,
+                "projectName":"p15",
+                "projectDesc":"p15",
+                "imageName":"p15",
+                "imageUrl":"images/15.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":15,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":16,
+                "projectName":"p16",
+                "projectDesc":"p16",
+                "imageName":"p16",
+                "imageUrl":"images/16.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":1,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":17,
+                "projectName":"p17",
+                "projectDesc":"p17",
+                "imageName":"p17",
+                "imageUrl":"images/17.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":17,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":18,
+                "projectName":"p18",
+                "projectDesc":"p18",
+                "imageName":"p18",
+                "imageUrl":"images/18.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":18,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":19,
+                "projectName":"p19",
+                "projectDesc":"p19",
+                "imageName":"p19",
+                "imageUrl":"images/19.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":19,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            },
+            {
+                "projectId":20,
+                "projectName":"p20",
+                "projectDesc":"p20",
+                "imageName":"p20",
+                "imageUrl":"images/20.jpg",
+                "width":100,
+                "height":100,
+                "link":"/project",
+                "uploadTime":"2017-09-02",
+                "categoryId":20,
+                "authorList":[
+                    {
+                        "userId":1000,
+                        "nickName":"Tom",
+                        "headImg":"images/avatar.jpg",
+                        "tel":"123456789",
+                        "email":"admin@interestm.com",
+                        "gender":"F",
+                        "role":"designer"
+                    }
+                ]
+            }
+        ]
+    },
+    "get_content_list":{
+        "success": true,
+        "code": 200,
+        "desc": "操作成功",
+        "data": [
+        {
+            "resourceId":1,
+            "projectId":1,
+            "resourceName":"webgl",
+            "resourceDesc":"webgl",
+            "imageName":"Mogan",
+            "imageUrl":"images/homestay/08.jpg",
+            "width":100,
+            "height":100,
+            "link":"/webgl?contentId=1",
+            "uploadTime":"2017-09-02",
+            "categoryType":"webgl",
+            "typeImg":"img/3dlogo.png",
+             "authorList":[
+                {
+                    "userId":1000,
+                    "nickName":"Tom",
+                    "headImg":"images/avatar.jpg",
+                    "tel":"123456789",
+                    "email":"admin@interestm.com",
+                    "gender":"F",
+                    "role":"designer"
+                }
+            ]
+        },
+        {
+            "resourceId":2,
+            "projectId":1,
+            "resourceName":"pano",
+            "resourceDesc":"pano",
+            "imageName":"Mogan",
+            "imageUrl":"images/homestay/07.jpg",
+            "width":100,
+            "height":100,
+            "link":"/pano?contentId=2",
+            "uploadTime":"2017-09-02",
+            "categoryType":"pano",
+            "typeImg":"img/panologo.png",
+             "authorList":[
+                {
+                    "userId":1000,
+                    "nickName":"Tom",
+                    "headImg":"images/avatar.jpg",
+                    "tel":"123456789",
+                    "email":"admin@interestm.com",
+                    "gender":"F",
+                    "role":"designer"
+                }
+            ]
+        },
+        {
+            "resourceId":3,
+            "projectId":1,
+            "resourceName":"loop",
+            "resourceDesc":"loop",
+            "imageName":"Mogan",
+            "imageUrl":"images/homestay/06.jpg",
+            "width":100,
+            "height":100,
+            "link":"/loop?contentId=3",
+            "uploadTime":"2017-09-02",
+            "categoryType":"loop",
+            "typeImg":"img/looplogo.png",
+             "authorList":[
+                {
+                    "userId":1000,
+                    "nickName":"Tom",
+                    "headImg":"images/avatar.jpg",
+                    "tel":"123456789",
+                    "email":"admin@interestm.com",
+                    "gender":"F",
+                    "role":"designer"
+                }
+            ]
+        },
+        {
+            "resourceId":4,
+            "projectId":1,
+            "resourceName":"JPG",
+            "resourceDesc":"JPG",
+            "imageName":"Mogan",
+            "imageUrl":"images/homestay/02.jpg",
+            "width":100,
+            "height":100,
+            "link":"/default?contentId=4",
+            "uploadTime":"2017-09-02",
+            "categoryType":"JPG",
+            "typeImg":"img/JPGlogo.png",
+             "authorList":[
+                {
+                    "userId":1000,
+                    "nickName":"Tom",
+                    "headImg":"images/avatar.jpg",
+                    "tel":"123456789",
+                    "email":"admin@interestm.com",
+                    "gender":"F",
+                    "role":"designer"
+                }
+            ]
+        }]
+    },
     "loop_image":{
         "success": true,
         "code": 200,
@@ -332,656 +1172,8 @@
             }
         ]
     },
-    "user_info":[{
-        "userId":1000,
-        "nickName":"Tom",
-        "headImg":"images/avatar.jpg",
-        "tel":"123456789",
-        "email":"admin@interestm.com",
-        "password":"123456",
-        "gender":"F",
-        "role":"designer",
-        "createdProjects":[
-            {
-                "projectId":1,
-                "projectName":"p1",
-                "projectDesc":"p1",
-                "imageName":"p1",
-                "imageUrl":"images/1.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":1,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            }
-        ],
-        "savedProjects":[
-            {
-                "projectId":1,
-                "projectName":"p1",
-                "projectDesc":"p1",
-                "imageName":"p1",
-                "imageUrl":"images/1.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":1,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            }
-        ]
-    }],
-    "get_content_list":{
-        "success": true,
-        "code": 200,
-        "desc": "操作成功",
-        "data": [
-        {
-            "resourceId":1,
-            "projectId":1,
-            "resourceName":"webgl",
-            "resourceDesc":"webgl",
-            "imageName":"Mogan",
-            "imageUrl":"images/homestay/08.jpg",
-            "width":100,
-            "height":100,
-            "link":"/webgl",
-            "uploadTime":"2017-09-02",
-            "categoryType":"webgl",
-            "typeImg":"img/3dlogo.png",
-             "authorList":[
-                {
-                    "userId":1000,
-                    "nickName":"Tom",
-                    "headImg":"images/avatar.jpg",
-                    "tel":"123456789",
-                    "email":"admin@interestm.com",
-                    "gender":"F",
-                    "role":"designer"
-                }
-            ]
-        },
-        {
-            "resourceId":2,
-            "projectId":1,
-            "resourceName":"pano",
-            "resourceDesc":"pano",
-            "imageName":"Mogan",
-            "imageUrl":"images/homestay/07.jpg",
-            "width":100,
-            "height":100,
-            "link":"/pano",
-            "uploadTime":"2017-09-02",
-            "categoryType":"pano",
-            "typeImg":"img/panologo.png",
-             "authorList":[
-                {
-                    "userId":1000,
-                    "nickName":"Tom",
-                    "headImg":"images/avatar.jpg",
-                    "tel":"123456789",
-                    "email":"admin@interestm.com",
-                    "gender":"F",
-                    "role":"designer"
-                }
-            ]
-        },
-        {
-            "resourceId":3,
-            "projectId":1,
-            "resourceName":"loop",
-            "resourceDesc":"loop",
-            "imageName":"Mogan",
-            "imageUrl":"images/homestay/06.jpg",
-            "width":100,
-            "height":100,
-            "link":"/loop",
-            "uploadTime":"2017-09-02",
-            "categoryType":"loop",
-            "typeImg":"img/looplogo.png",
-             "authorList":[
-                {
-                    "userId":1000,
-                    "nickName":"Tom",
-                    "headImg":"images/avatar.jpg",
-                    "tel":"123456789",
-                    "email":"admin@interestm.com",
-                    "gender":"F",
-                    "role":"designer"
-                }
-            ]
-        },
-        {
-            "resourceId":4,
-            "projectId":1,
-            "resourceName":"JPG",
-            "resourceDesc":"JPG",
-            "imageName":"Mogan",
-            "imageUrl":"images/homestay/02.jpg",
-            "width":100,
-            "height":100,
-            "link":"/default",
-            "uploadTime":"2017-09-02",
-            "categoryType":"JPG",
-            "typeImg":"img/JPGlogo.png",
-             "authorList":[
-                {
-                    "userId":1000,
-                    "nickName":"Tom",
-                    "headImg":"images/avatar.jpg",
-                    "tel":"123456789",
-                    "email":"admin@interestm.com",
-                    "gender":"F",
-                    "role":"designer"
-                }
-            ]
-        }]
-    },
-    "get_project_list":{
-        "success": true,
-        "code": 200,
-        "desc": "操作成功",
-        "data": [
-            {
-                "projectId":1,
-                "projectName":"p1",
-                "projectDesc":"测试",
-                "imageName":"p1",
-                "imageUrl":"images/1.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":1507038387000,
-                "categoryId":1,
-                "authorList": [
-                        {
-                            "userId": 1,
-                            "nickName": "CPfive",
-                            "headImg": "/interestm/img/headImg/CPfive.jpg",
-                            "tel": "12345678900",
-                            "email": "syzh1991@126.com",
-                            "gender": "male",
-                            "role": 1,
-                            "messages": null,
-                            "createdProjects": null,
-                            "savedProjects": null
-                        },
-                        {
-                            "userId": 3,
-                            "nickName": "hustcp5",
-                            "headImg": "/interestm/img/headImg/CPfive.jpg",
-                            "tel": "12345678902",
-                            "email": "test1@126.com",
-                            "gender": "male",
-                            "role": 1,
-                            "messages": null,
-                            "createdProjects": null,
-                            "savedProjects": null
-                        }
-                    ],
-                    "saved": false
-            },
-            {
-                "projectId":2,
-                "projectName":"p2",
-                "projectDesc":"p2",
-                "imageName":"p2",
-                "imageUrl":"images/2.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":1,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":3,
-                "projectName":"p3",
-                "projectDesc":"p3",
-                "imageName":"p3",
-                "imageUrl":"images/3.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":3,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":4,
-                "projectName":"p4",
-                "projectDesc":"p4",
-                "imageName":"p4",
-                "imageUrl":"images/4.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":1,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":5,
-                "projectName":"p5",
-                "projectDesc":"p5",
-                "imageName":"p1",
-                "imageUrl":"images/1.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":5,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":6,
-                "projectName":"p6",
-                "projectDesc":"p6",
-                "imageName":"p6",
-                "imageUrl":"images/6.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":6,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":7,
-                "projectName":"p7",
-                "projectDesc":"p7",
-                "imageName":"p7",
-                "imageUrl":"images/7.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":7,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":8,
-                "projectName":"p8",
-                "projectDesc":"p8",
-                "imageName":"p8",
-                "imageUrl":"images/8.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":8,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":9,
-                "projectName":"p9",
-                "projectDesc":"p9",
-                "imageName":"p9",
-                "imageUrl":"images/9.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":9,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":10,
-                "projectName":"p10",
-                "projectDesc":"p10",
-                "imageName":"p10",
-                "imageUrl":"images/10.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":10,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":11,
-                "projectName":"p11",
-                "projectDesc":"p11",
-                "imageName":"p11",
-                "imageUrl":"images/11.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":1,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":12,
-                "projectName":"p12",
-                "projectDesc":"p12",
-                "imageName":"p12",
-                "imageUrl":"images/12.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":12,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":13,
-                "projectName":"p13",
-                "projectDesc":"p13",
-                "imageName":"p13",
-                "imageUrl":"images/13.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":13,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":14,
-                "projectName":"p14",
-                "projectDesc":"p14",
-                "imageName":"p14",
-                "imageUrl":"images/14.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":1,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":15,
-                "projectName":"p15",
-                "projectDesc":"p15",
-                "imageName":"p15",
-                "imageUrl":"images/15.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":15,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":16,
-                "projectName":"p16",
-                "projectDesc":"p16",
-                "imageName":"p16",
-                "imageUrl":"images/16.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":1,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":17,
-                "projectName":"p17",
-                "projectDesc":"p17",
-                "imageName":"p17",
-                "imageUrl":"images/17.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":17,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":18,
-                "projectName":"p18",
-                "projectDesc":"p18",
-                "imageName":"p18",
-                "imageUrl":"images/18.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":18,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":19,
-                "projectName":"p19",
-                "projectDesc":"p19",
-                "imageName":"p19",
-                "imageUrl":"images/19.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":19,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            },
-            {
-                "projectId":20,
-                "projectName":"p20",
-                "projectDesc":"p20",
-                "imageName":"p20",
-                "imageUrl":"images/20.jpg",
-                "width":100,
-                "height":100,
-                "link":"/project",
-                "uploadTime":"2017-09-02",
-                "categoryId":20,
-                "authorList":[
-                    {
-                        "userId":1000,
-                        "nickName":"Tom",
-                        "headImg":"images/avatar.jpg",
-                        "tel":"123456789",
-                        "email":"admin@interestm.com",
-                        "gender":"F",
-                        "role":"designer"
-                    }
-                ]
-            }
-        ]
-    },
-    "common_image":{
+    "common_image":
+    {
         "success": true,
         "code": 200,
         "desc": "操作成功",
@@ -991,7 +1183,7 @@
                 "projectId": 1,
                 "resourceId": 1,
                 "imageName": "001jpg01",
-                "imageUrl": "asset/project1/level3/jpg/001.jpg",
+                "imageUrl": "asset/project1/level3/jpg/p101.jpg",
                 "imageDesc": "测试"
             },
             {
@@ -999,7 +1191,7 @@
                 "projectId": 1,
                 "resourceId": 1,
                 "imageName": "001jpg01",
-                "imageUrl": "asset/project1/level3/jpg/002.jpg",
+                "imageUrl": "asset/project1/level3/jpg/p102.jpg",
                 "imageDesc": "测试"
             },
             {
@@ -1007,7 +1199,7 @@
                 "projectId": 1,
                 "resourceId": 1,
                 "imageName": "001jpg01",
-                "imageUrl": "asset/project1/level3/jpg/003.jpg",
+                "imageUrl": "asset/project1/level3/jpg/p103.jpg",
                 "imageDesc": "测试"
             },
             {
@@ -1015,7 +1207,7 @@
                 "projectId": 1,
                 "resourceId": 1,
                 "imageName": "001jpg01",
-                "imageUrl": "asset/project1/level3/jpg/004.jpg",
+                "imageUrl": "asset/project1/level3/jpg/p104.jpg",
                 "imageDesc": "测试"
             },
             {
@@ -1023,10 +1215,55 @@
                 "projectId": 1,
                 "resourceId": 1,
                 "imageName": "001jpg01",
-                "imageUrl": "asset/project1/level3/jpg/005.jpg",
+                "imageUrl": "asset/project1/level3/jpg/p105.jpg",
                 "imageDesc": "测试"
             }
         ]
+    },
+    "webgl_image":{
+        "success": true,
+        "code": 200,
+        "desc": "操作成功",
+        "data": {
+            "id": 1,
+            "projectId": 1,
+            "resourceId": 1,
+            "imageName": "001jpg01",
+            "imageUrl":"asset/project1/level3/jpg/001.jpg",
+            "imageDesc": "测试",
+            "modelUrl":"asset/project1/level3/webgl/house_test.4dage",
+            "handle":[{
+                    "type":"script",
+                    "name":"4dage",
+                    "url":"asset/project1/level3/webgl/4dage.js"
+                }]
+            }
+    },
+    "pano_image":{
+        "success": true,
+        "code": 200,
+        "desc": "操作成功",
+        "data": {
+            "id": 2,
+            "projectId": 1,
+            "resourceId": 2,
+            "imageName": "001jpg01",
+            "imageUrl":"asset/project1/level3/jpg/002.jpg",
+            "imageDesc": "pano测试",
+            "modelUrl":"/asset/project1/level3/pano/pano.xml",
+            "handle":[{
+                    "type":"script",
+                    "name":"pano2vr_player",
+                    "url":"/asset/project1/level3/pano/pano2vr_player.js"
+                },
+                {
+                    "type":"script",
+                    "name":"skin",
+                     "url":"/asset/project1/level3/pano/skin.js"
+                }
+                ]
+        }
     }
+
 
 }

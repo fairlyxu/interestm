@@ -8,8 +8,8 @@
   position: absolute; }
 
 .topleft {
-  top: 7px;
-  left: 7px; }
+  top: 1em;
+  left: 1em; }
 
 .topright {
   top: 7px;
@@ -27,7 +27,7 @@
 
 .social-position {
   z-index: 100;
-  margin-top: -9em;
+  margin-top: -6.4em;
   right: 0;
   max-width: 151px; }
 
@@ -142,5 +142,21 @@
 .center-icon {
   left: 45%;
   position: fixed; }
+
+@media (min-width: 555px) and (max-width: 1000px) {
+  .bottom-icon {
+    top: 76% !important; } }
+@media screen and (max-width: 555px) {
+  .left-right-icon {
+    display: none; }
+
+  .top-bottom-icon {
+    display: block; } }
+@media screen and (min-width: 556px) {
+  .left-right-icon {
+    display: block; }
+
+  .top-bottom-icon {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

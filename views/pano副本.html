@@ -93,9 +93,10 @@
                 </section>
             </div>
         </div>
-         <script type="text/javascript" src="/asset/project1/level3/pano/pano2vr_player.js"></script>
-            <script type="text/javascript" src="/asset/project1/level3/pano/skin.js"></script>
+
             
+        	<!--<script type="text/javascript" src="/asset/project1/level3/pano/pano2vr_player.js"></script>
+            <script type="text/javascript" src="/asset/project1/level3/pano/skin.js"></script>-->
         <script id="pano-template" type="text/template">
            <br>Loading...
             <br>
@@ -116,27 +117,36 @@
             </noscript>
             <!-- Hack needed to hide the url bar on iOS 9, iPhone 5s -->
             <div style="width:1px;height:1px;"></div>
-           
+            <!-- {{each datalist value}} 
+  <div class="col-xs-4 img-box">
+    <a href={{value.link}}> <img src={{value.imageUrl}} alt={{value.imageName}}/> </a>
+  </div>
+  {{/each}}
+-->
         </script>
 </body>
 <%include  foot.html%>
-<script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         initSocial(".social-position");
         var param = getQueryString();
         var data = reqData("pano_image?" + param);
-        console.log(data['datalist']['modelUrl']); 
+        console.log(data);
+        //add  script & style 
         if (data) {
 	        handles = data["datalist"]["handle"];
+
 	        for (var i = 0; i < handles.length; i++) {
-	        	var script = $('<script></script');
+	        	var script = document.createElement('script');
 				script.type = 'text/javascript';
 				script.src =  handles[i]["url"];
 	        	$("body").append(script);
-	        }; 
-	        var html = template('pano-template', {"modelUrl":data['datalist']['modelUrl']});
+	        };
+	        console.log($("#panomodel"))
+	        var html = template('pano-template', data["datalist"]["modelUrl"]);
 	        $("#panomodel").html(html);
         };
     });
-</script>
+    </script>
+
 </html>

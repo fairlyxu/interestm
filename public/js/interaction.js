@@ -21,7 +21,18 @@ var show = function(divmodel){
      
   }  
 }
-
+/* input userId
+ *  check wehether login or not 
+ */
+var checkLogin = function(userId){
+    var loginFlag = false;
+    if(window.localStorage){   
+         loginFlag = localStorage.getItem(userId);    
+    }else{  
+        alert("浏览器还不支持 web storage 功能");  
+    } 
+    return loginFlag; //采用其他处理方式    
+}
 // request data
 var reqData = function(interfaceurl){
   var resultdata;
@@ -52,7 +63,7 @@ var  getQueryString = function(url){
         return null;
 }
 
-// 保存反馈窗口
+// 保存后反馈窗口
 var save = function(titleTxt,conTxt){
   titleTxt = '牛逼闪闪的标题';
   conTxt =  '<p>收藏成功.</p>';
@@ -132,7 +143,6 @@ var show_modal = function(setting){
     //执行操作
     _self.int();
 }
-
 //show_modal回调函数，4s后隐藏弹窗
 function timeClose(){
     setTimeout(function(){
