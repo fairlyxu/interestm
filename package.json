@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "mock": "json-server  --watch mock/data.json",
+    "mock": "json-server  --watch mock/data.json --port 3333",
     "sass":"sass --watch ./public/sass/style.scss:./public/css/style.css",
     "start": "node ./bin/www"
   },
