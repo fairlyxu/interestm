@@ -1,0 +1,80 @@
+.name {
+  color: #555;
+  font-size: 48px;
+  letter-spacing: -1.75px;
+  line-height: 56px;
+  word-spacing: -2.75px; }
+
+.block {
+  display: block; }
+
+.dark-gray {
+  color: #555; }
+
+.des {
+  color: #555;
+  font-size: 20px; }
+
+.px1 {
+  float: left;
+  margin-right: 1em; }
+
+.label {
+  padding-left: 0;
+  color: #a7a7a7; }
+
+@media (min-width: 1200px) {
+  .col-md-3 {
+    width: 23%;
+    margin: 2px; } }
+@media (min-width: 200px) {
+  .col-xs-4 {
+    padding-left: 1px;
+    padding-right: 1px; }
+
+  .pin {
+    height: 280px;
+    border-radius: 0.5em;
+    border: 0px #000 solid;
+    margin: 0.5em; }
+
+  .pin:hover {
+    background: #ebebeb; }
+
+  .pin-box {
+    margin-top: 10px;
+    height: 200px; }
+    .pin-box img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1em; }
+
+  .img-box-padding-top: 10px;
+  .img-box img {
+    width: 100%;
+    max-height: 100px;
+    padding: 3px; }
+
+  .note-box {
+    padding-top: 5px;
+    height: 50px;
+    text-align: center;
+    border-radius: 0.5em;
+    border: 0px #000 solid;
+    margin: 10px 0; }
+
+  .note-box p {
+    margin: 0; } }
+.box-title {
+  padding: 5px;
+  word-spacing: 0;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 100px;
+  text-align: center;
+  border-radius: 0.5em; }
+
+.box-title:hover {
+  background: #ebebeb; }
+
+/*# sourceMappingURL=profilestyle.css.map */

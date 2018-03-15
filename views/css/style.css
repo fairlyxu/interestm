@@ -1,0 +1,162 @@
+/*
+*  common
+* left and right logo
+*/
+.logotype {
+  max-width: 20px;
+  max-height: 20px;
+  position: absolute; }
+
+.topleft {
+  top: 1em;
+  left: 1em; }
+
+.topright {
+  top: 7px;
+  right: 7px; }
+
+.waterfall {
+  padding-top: 0px; }
+
+.social-position, .share-link {
+  padding: 0.8em;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); }
+
+.social-position {
+  z-index: 100;
+  margin-top: -6.4em;
+  right: 0;
+  max-width: 151px; }
+
+.share-link {
+  margin-top: -7.2em;
+  left: 48%;
+  width: 30%;
+  border: 1px solid #ccc; }
+
+/*
+*   
+* index page
+*/
+.m_logo {
+  margin-left: 12px; }
+
+.mininav {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px 9px 1px 1px;
+  position: sticky;
+  top: 0px;
+  will-change: transform;
+  z-index: 101; }
+  .mininav img {
+    width: 35px;
+    height: 35px; }
+
+/*
+*
+* seconde page
+*/
+.secondbody {
+  background-color: #edeeef; }
+
+.secondpage {
+  background-color: #fff;
+  border-top: 10px solid #fff;
+  border-bottom: 10px  solid #fff;
+  border-radius: 15px;
+  margin-top: 15px; }
+
+.minifoot {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding-top: 0.5em; }
+  .minifoot img {
+    width: 30px;
+    height: 30px; }
+
+/*
+*
+* third page
+*/
+.opr-icon-left {
+  width: 50px;
+  height: 100%;
+  padding: 0.5em;
+  position: absolute;
+  z-index: 2000;
+  left: 0; }
+  .opr-icon-left img {
+    width: 25px; }
+
+.opr-icon-right {
+  width: 50px;
+  height: 100%;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+  z-index: 2000; }
+  .opr-icon-right img {
+    width: 25px; }
+
+.opr-icon-top {
+  width: 100%;
+  height: 50px;
+  padding: 0.5em;
+  position: absolute;
+  z-index: 2000; }
+  .opr-icon-top img {
+    width: 25px; }
+
+.opr-icon-bottom {
+  width: 100%;
+  height: 50px;
+  padding: 0.5em;
+  position: absolute;
+  z-index: 2000; }
+  .opr-icon-bottom img {
+    width: 25px; }
+
+.top-icon {
+  top: 1em; }
+
+.mid-icon {
+  position: relative;
+  top: 43%; }
+
+.bottom-icon {
+  position: relative;
+  top: 88%; }
+
+.left-icon {
+  left: 1em;
+  position: fixed; }
+
+.right-icon {
+  right: 1em;
+  position: fixed; }
+
+.center-icon {
+  left: 45%;
+  position: fixed; }
+
+@media (min-width: 555px) and (max-width: 1000px) {
+  .bottom-icon {
+    top: 76% !important; } }
+@media screen and (max-width: 555px) {
+  .left-right-icon {
+    display: none; }
+
+  .top-bottom-icon {
+    display: block; } }
+@media screen and (min-width: 556px) {
+  .left-right-icon {
+    display: block; }
+
+  .top-bottom-icon {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
