@@ -12,10 +12,8 @@ var app = express();
 
 // view engine setup
 var ejs = require('ejs'); 
-//app.set('views', path.join(__dirname, 'views'));
-app.engine('html', ejs.__express);
-app.set('view engine', 'html'　);
-
+app.set('views', path.join(__dirname, 'views'));  
+app.set('view engine', 'ejs'); 
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -46,30 +44,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-
-
-/*
-// gulp -sass
-var gulp = require('gulp');
-// 引入依赖包
-var sass = require('gulp-sass');
-gulp.task('sass', function(){
-    //sass()方法用于转换sass到css
-  return gulp.src('/scss/styles.scss')
-    .pipe(sass()) // Converts Sass to CSS with gulp-sass
-    .pipe(gulp.dest('/css'))
-});
-
-//Watching Sass files for changes
-gulp.task('watch', function(){
-  gulp.watch('/scss/*.scss', ['sass']); 
-  // Other watchers
-})
-
-*/
 module.exports = app;
 // sass --watch ./public/sass/style.scss:./public/css/style.css
 // DEBUG=webgl:* npm start
 // cd /Users/fairlyxu/Documents/08-workspace/sublime/interestm
 //npm run sass & npm run mock & npm run start 
+// @Tm20161213@
 

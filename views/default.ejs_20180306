@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/imgstyle.css">
+<style type="text/css">
+@media (min-width: 555px) and (max-width:1000px){
+    .bottom-icon{
+        top:76%!important;
+    }
+}
+ a {
+    background-color: transparent!important;
+}
+.vertical-center1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+<head>
+    <%include head.ejs%>
+    <title></title>
+</head>
+<body class="secondbody">
+    <%include modal.ejs%>
+    <div class="left-right-icon" >
+        <section class="opr-icon-left">
+            <a href="/" class="top-icon close-icon"><img src="img/close.png"></a>
+            <a class="mid-icon" href="pano?contentId=2"><img src="img/prev.png"></a>
+            <a href="javascript:history.back(-1);" class="bottom-icon"><img src="img/return.png"></a>
+        </section>
+        <section class="opr-icon-right">  
+            <a onclick="" class="top-icon"><img src="img/save3.png"></a>
+            <a class="mid-icon" href="/webgl?contentId=1"><img src="img/next.png"></a>
+            <a onclick="show('.social-position');" class="bottom-icon"><img src="img/share3.png"></a>
+            <div class="social-position hidden" style="position: fixed;bottom: 30px;margin-right: 5px;"></div>
+        </section>
+    </div>
+    <div class="container vertical-center">
+        <div class="row">
+            <section class="col-xs-12 top-bottom-icon navbar-fixed-top opr-icon-top"> 
+                <a href="/" class="left-icon close-icon"><img src="img/close.png"></a>
+                <a class="center-icon" href="pano?contentId=2"><img src="img/prev.png" class="rotate90"></a>
+                <a href="javascript:history.back(-1);" class="right-icon"><img src="img/return.png"></a>
+            </section>
+            <section class="col-xs-12 col-md-12" >  
+                <!-- Swiper -->
+                <section class="pc-banner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                        </div>  
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </section>
+            </section>
+            <section class="col-xs-12 top-bottom-icon navbar-fixed-bottom opr-icon-bottom">
+                <a onclick="" class="left-icon"><img src="img/save3.png"></a>
+                <a class="center-icon" href="/webgl?contentId=1"><img src="img/next.png" class="rotate90"></a>
+                <a onclick="show('.social-position');" class="right-icon"><img src="img/share3.png"></a>
+                <div class="social-position hidden" style="position: fixed;bottom: 50px;margin-right: 5px;"></div>
+            </section>
+        </div>  
+    </div>
+</body>
+<%include foot.ejs%>
+<script id="imgs-template" type=text/template >
+{{each datalist item}}
+    <div class="swiper-slide"><a href="#"><img src={{item.imageUrl}} ></a></div>
+{{/each}}
+</script>
+<script src="js/swiper.min.js"></script>
+<script>
+$(document).ready(function (){
+    initSocial(".social-position");
+    var params = getQueryString().split('&');    
+    var data1= reqData("/image_mgmt/common_image?"+params[0]);
+    console.log(params);
+    $('.mid-icon')[0].href = params[1]
+    $('.mid-icon')[1].href = params[2]
+    $('.center-icon')[0].href = params[1]
+    $('.center-icon')[1].href = params[2]
+    $(".close-icon").attr("href","/project:"+data1['datalist'][0]["projectId"])
+    var html = template('imgs-template', data1);
+    $(".swiper-wrapper").html(html);  
+    var swiper = new Swiper('.swiper-container',{
+        autoplay:3000,
+        speed:1000,
+        autoplayDisableOnInteraction : false,
+        loop:true,
+        centeredSlides : true,
+        slidesPerView:2,
+        pagination : '.swiper-pagination',
+        paginationClickable:true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        onInit:function(swiper){
+            swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+            },
+        breakpoints: {
+                668: {
+                    slidesPerView: 1,
+                 }
+            }
+    });
+})
+</script>
+</html>

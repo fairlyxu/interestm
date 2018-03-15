@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<%include head.html%>
+<style type="text/css">
+.center-icon {
+    left: 45%;
+    position: absolute;
+}
+ol{
+  padding-left: auto;
+}
+.navbar-brand{
+  height: 45px;
+}
+</style>
+<body class="secondbody">
+  <%include modal.html%>
+  <div class="container project-container">
+    <div class="row secondpage">
+        <section class="col-xs-12 mininav navbar">
+            <a class="navbar-brand pull-right" onclick="save()" style="padding-right: 4px;">
+              <img src="img/save2.png" alt="logo" class="m_logo" >
+            </a>
+            <a class="navbar-brand" href="#" style="padding-left: 0px;">
+              <img src="img/m_logo.png" alt="logo" class="m_logo" >
+            </a>
+        </section>
+        <section class="project-waterfall waterfall col-xs-12" id="project-waterfall"  style="margin-top: -4px;margin-bottom: 15px;">  
+        </section>  
+        <section class="col-xs-12 col-xs-12 minifoot">
+          <!--social module-->
+          <a class="navbar-brand pull-right"  onclick="show('.social-share')" style="padding-right: 4px;">
+            <img src="img/share.png" alt="logo" class="m_logo" >
+          </a>
+          <div class="social-position hidden" data-mobile-sites="weibo,qq,qzone,tencent">
+            <!--<a href="javascript:;" class="social-share-icon icon-heart"></a>-->
+          </div>
+          <!-- link module-->
+          <a class="navbar-brand center-icon"  onclick="show('#prolink')" >
+            <img src="img/hotlink.png" alt="logo" class="m_logo" >
+          </a>
+          <ul class="share-link hidden center-block" id="prolink">
+            <ol><a href="#" class="center-block">酒店预订</a></ol>
+            <ol><a href="#" class="center-block">施工合作</a></ol>
+            <ol><a href="#" class="center-block">设计合作</a></ol>
+          </ul>  
+          <a class="navbar-brand pull-left" href="#" style="padding-left: 4px;">
+            <img src="img/user.png" alt="logo" class="m_logo" >
+          </a>
+        </section>
+    </div>
+  </div>
+</body>
+<script id="waterfall-template" type=text/template >
+  {{each datalist item}}
+    <div class="col-xs-12 col-sm-6" style="padding: 4px; margin-bottom: 0em">
+      <a href={{item.link}}  target="_blank"> <img src={{item.imageUrl}} style="width: 100%;border-radius: 10px;" alt={{item.imageName}}  > </a>
+      <img src={{item.typeImg}}   class="logotype topleft">
+    </div>
+  {{/each}}
+</script>
+    <%include foot.html%>
+    <script>
+    $(document).ready(function () {
+      // var data1= reqData("/get_content_list?projectId=1");
+       var data1= reqData("/project_mgmt/content/get_content_list?projectId=1");
+       var html = template('waterfall-template', data1);
+       $("#project-waterfall").html(html).waterfall();
+        initSocial(".social-position");
+      })
+    </script>
+</html>

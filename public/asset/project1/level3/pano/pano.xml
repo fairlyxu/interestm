@@ -1,27 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<panorama id="node1">
-  <input leveltilesize="510" width="2000" overlap="1" levelingpitch="0" levelbias="0.400" levelbiashidpi="0.400" levelingroll="0" leveltileurl="tiles/PSD720_40/cf_%c/l_%l/c_%x/tile_%y.jpg" height="2000">
-    <level width="2000" predecode="0" preload="0" height="2000"/>
-    <level width="1000" predecode="0" preload="0" height="1000"/>
-    <level width="500" predecode="1" preload="1" height="500"/>
-    <preview color="0x808080" strip="1"/>
-  </input>
-  <view fovmode="0" pannorth="0">
-    <start fov="70" tilt="0" pan="0"/>
-    <min fov="5" tilt="-90" pan="0"/>
-    <max fov="120" tilt="90" pan="360"/>
-  </view>
-  <userdata description="育渺智能科技有限公司" latitude="" longitude="" comment="" author="作者：Tsingjoe周青" copyright="" datetime="" source="" info="" tags="" title=""/>
-  <hotspots width="180" wordwrap="1" height="20">
-    <label borderalpha="1" width="180" textalpha="1" textcolor="0x000000" wordwrap="1" border="1" bordercolor="0x000000" borderradius="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" height="20" enabled="1"/>
-    <polystyle borderalpha="1" handcursor="1" bordercolor="0x0000ff" mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff"/>
-  </hotspots>
-  <media>
-    <sound level="1.000" field="90.000" pansize="10.000" ambientlevel="0.000" tiltsize="10.000" tilt="-1.000" loop="0" mode="0" pan="-1.000" id="_background">
-      <source url="media/river01.mp3"/>
-    </sound>
-  </media>
-  <transition zoomfov="20" zoomin="0" blendtime="1" softedge="0" zoomoutpause="1" blendcolor="0x000000" zoomout="0" type="crossdissolve" zoomspeed="2" enabled="0"/>
-  <autorotate returntohorizon="0.000" useanimation="0" delay="3.00" nodedelay="0.00" noderandom="1" startloaded="0" speed="-0.100"/>
-  <control dblclickfullscreen="0" invertwheel="0" lockedkeyboardzoom="0" speedwheel="1" invertcontrol="1" simulatemass="1" lockedwheel="0" contextfullscreen="0" lockedmouse="0" lockedkeyboard="0" hideabout="0" sensitivity="8"/>
-</panorama>
+<tour appversion="5.2.2" start="node1" apprev="15983">
+  <panorama id="node1">
+    <input width="2000" overlap="1" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelbiashidpi="0.400" height="2000" levelbias="0.400" levelingroll="0" levelingpitch="0">
+      <level preload="0" width="2000" height="2000" predecode="0"/>
+      <level preload="0" width="1000" height="1000" predecode="0"/>
+      <level preload="1" width="500" height="500" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" projection="4" tilt="0" fov="70"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fov="5"/>
+      <max scaletofit="1" pan="360" fovfisheye="360" tilt="90" fovstereographic="270" fov="120"/>
+    </view>
+    <userdata source="" copyright="" comment="" title="" latitude="" datetime="2017/8/10 0:42" info="" description="" customnodeid="" tags="STUFF" author="" longitude=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label borderalpha="1" enabled="1" background="1" wordwrap="1" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" height="20" borderradius="1" textcolor="0x000000" border="1" backgroundcolor="0xffffff"/>
+      <polystyle borderalpha="1" bordercolor="0x0000ff" backgroundalpha="0.2509803921568627" handcursor="1" backgroundcolor="0x0000ff" mode="0"/>
+      <hotspot id="Point01" pan="24.05" title="" skinid="ht_node" url="{node2}" description="" tilt="-5.77" target=""/>
+    </hotspots>
+    <media>
+      <sound loop="0" field="90.000" id="Element01" pan="43.020" level="0.500" tiltsize="10.000" pansize="10.000" ambientlevel="0.000" tilt="-3.370" mode="1">
+        <source url="media/river01.mp3"/>
+      </sound>
+    </media>
+    <transition enabled="1" softedge="0" zoomout="0" zoomoutpause="0" zoomfov="20" type="crossdissolve" blendcolor="0x841708" blendtime="3" zoomspeed="2" zoomin="0"/>
+    <autorotate delay="0.00" enabled="1" speed="-0.100" startloaded="1" returntohorizon="0.000" nodedelay="60.00" useanimation="0" noderandom="0"/>
+    <soundstransition enabled="1" transitiontime="2" crossfade="1"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <control lockedwheel="0" invertwheel="0" dblclickfullscreen="0" simulatemass="1" sensitivity="8" rubberband="0" lockedkeyboard="0" contextfullscreen="0" hideabout="0" lockedkeyboardzoom="0" contextprojections="0" lockedmouse="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node2">
+    <input width="2000" overlap="1" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelbiashidpi="0.400" height="2000" levelbias="0.400" levelingroll="0" levelingpitch="0">
+      <level preload="0" width="2000" height="2000" predecode="0"/>
+      <level preload="0" width="1000" height="1000" predecode="0"/>
+      <level preload="1" width="500" height="500" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" projection="4" tilt="0" fov="70"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fov="5"/>
+      <max scaletofit="1" pan="360" fovfisheye="360" tilt="90" fovstereographic="270" fov="120"/>
+    </view>
+    <userdata source="" copyright="" comment="" title="" latitude="" datetime="2017/8/10 10:28" info="" description="" customnodeid="" tags="STUFF" author="" longitude=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label borderalpha="1" enabled="1" background="1" wordwrap="1" bordercolor="0x000000" backgroundalpha="1" width="180" textalpha="1" height="20" borderradius="1" textcolor="0x000000" border="1" backgroundcolor="0xffffff"/>
+      <polystyle borderalpha="1" bordercolor="0x0000ff" backgroundalpha="0.2509803921568627" handcursor="1" backgroundcolor="0x0000ff" mode="0"/>
+      <hotspot id="Point01" pan="50.86" title="" skinid="ht_node" url="{node1}" description="" tilt="2.27" target=""/>
+    </hotspots>
+    <media>
+      <sound loop="0" field="90.000" id="Element01" pan="27.160" level="1.000" tiltsize="10.000" pansize="10.000" ambientlevel="0.000" tilt="2.970" mode="1">
+        <source url="media/bird01.mp3"/>
+      </sound>
+    </media>
+    <transition enabled="1" softedge="0" zoomout="0" zoomoutpause="0" zoomfov="20" type="crossdissolve" blendcolor="0x841708" blendtime="3" zoomspeed="2" zoomin="0"/>
+    <autorotate delay="0.00" enabled="1" speed="-0.100" startloaded="1" returntohorizon="0.000" nodedelay="60.00" useanimation="0" noderandom="0"/>
+    <soundstransition enabled="1" transitiontime="2" crossfade="1"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <control lockedwheel="0" invertwheel="0" dblclickfullscreen="0" simulatemass="1" sensitivity="8" rubberband="0" lockedkeyboard="0" contextfullscreen="0" hideabout="0" lockedkeyboardzoom="0" contextprojections="0" lockedmouse="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+</tour>

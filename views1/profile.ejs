@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<%include head.ejs%>
+<link rel="stylesheet" href="css/profilestyle.css" /> 
+<body>
+  <%include header.ejs%>
+  <section class="container mobilemain" style="width: 90%;">
+    <div class="row">
+        <section class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <div class="row">
+            <!-- setting
+            <section class="">
+              <p>setting ~ </p>
+            </section>  
+          -->
+          </div>
+          <div class="row">
+            <section class="col-xs-7 col-md-7">
+              <p class="name"><%=user.nickName%></p>
+              <p class="des">上海育渺智能科技 旗下开发团队 </p>
+              <p class="des"><%=user.email%></p>
+              <p class="des">Wechat: &nbsp;&nbsp;TsingJoe</p>
+              <div>
+                <div class="px1">
+                    <span class="block dark-gray">0</span>
+                    <span class="label">Followers</span>           
+                </div>
+                <div class="px1">
+                    <span class="block dark-gray">2</span>
+                    <span class="label">Followering</span>
+                </div>
+              <div>
+            </section>
+            <section class="col-xs-5 col-md-5">
+               <span class="pull-left thumb-small">
+                <img src=<%=user.headImg%> alt="上海育渺智能科技" class="img-circle" style="width:100%">
+              </span>
+            </section>    
+          </div>
+        </section>  
+    </div>
+    <hr>
+    <!--
+    <div class="row">
+      <p class="box-title"> my pin</p>
+      <div class="savedproject-box"></div>
+    </div>
+    <hr>
+    <div class="row">
+      <p class="box-title"> my work</p>
+      <div class="createddproject-box"></div>
+    </div> 
+  -->
+  </section>
+<%include foot.ejs%>
+<!-- 一个box  一个 project-->
+<script id="proj-template" type="text/template">
+ {{each datalist value}} 
+  <section class="pin col-xs-12 col-sm-6 col-md-3">
+    <div class="pin-box savedproject-box" style="overflow: hidden;">
+      <a href={{value.link}}> <img src={{value.imageUrl}} alt={{value.imageName}} class="center-block"/> </a>
+    </div>
+    <div class="note-box">
+      <p><strong>{{value.projectName}}</strong> </p>
+      <p>{{value.projectDesc}}</p>
+    </div>
+  </section>
+  {{/each}}
+</script>
+<!-- project 包 根据category分类-->
+<script id="proj-cate-template" type="text/template">
+  {{each datalist value}} 
+  <div class="col-xs-4 img-box">
+    <a href={{value.link}}> <img src={{value.imageUrl}} alt={{value.imageName}}/> </a>
+  </div>
+  {{/each}}
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+  var param = getQueryString();
+    var data= reqData("user_info?"+param);
+    var savedata={
+      "datalist":data["datalist"]["savedProjects"]
+    }
+    var createdata={
+      "datalist":data["datalist"]["createdProjects"]
+    }
+    var createdhtml = template('proj-template', createdata);
+    var savedhtml = template('proj-template', savedata);
+    $(".savedproject-box").html(savedhtml);
+    $(".createddproject-box").html(createdhtml);
+   });
+</script>
+</body>
+</html>

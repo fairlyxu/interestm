@@ -1,30 +1,52 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-const MOCKURL = "http://127.0.0.1:3333/"
-
-var projectListURL = MOCKURL+'get_project_list';
-var projectItems ;
+ 
+// project 
+var mid = require('./middleware');
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'interestm'});
-
+  var url = '/project_mgmt/project/get_project_list'
+  mid.find(req, url, function(data){ 
+    res.render('index',{datalist:data.data});
+    res.end();
+  }) 
 });
 
 router.get('/index', function(req, res, next) {
   res.render('index', { title: 'interestm',projectItems:projectItems });
 });
 
-
-router.get('/project', function(req, res, next) {
-  res.render('project', { title: 'project of Mogan Mountain'});
+router.get('/project:id', function(req, res, next) {
+  pid = (req.params.id).substring(1)
+  var url = '/project_mgmt/content/get_content_list?projectId='+pid;
+  mid.find(req, url, function(data){ 
+    data1 = data.data
+    for (tmp in data1 ){
+      pLink = data1[tmp]['preLink'].split('/').pop().replace('_image','')
+      nLink = data1[tmp]['nextLink'].split('/').pop().replace('_image','')
+      data1[tmp]['link'] = data1[tmp]['link']+'?contentId='+data1[tmp]['resourceId']+'&'+pLink+'&'+nLink
+    }
+    res.render('project', { datalist: data1});
+    res.end();
+  }) 
 });
 
+router.get('/project', function(req, res, next) {
+  pid = 1;//(req.params.id).substring(1)
+  var url = '/project_mgmt/content/get_content_list?projectId='+pid;
+  mid.find(req, url, function(data){
+    res.render('project', { datalist: data.data});
+    res.end();
+  })
+});
+
+
 router.get('/demo1', function(req, res, next) {
-  res.render('demo1', { title: '观景台建筑结构展示' });
+  res.render('demo1', { title: '莫干山度假酒店' });
 });
 
 router.get('/demo2', function(req, res, next) {
-  res.render('test', { title: '观景台建筑结构展示' });
+  res.render('test', { title: '莫干山度假酒店' });
 });
 
 router.get('/login', function(req, res, next) {
@@ -34,11 +56,11 @@ router.get('/login', function(req, res, next) {
 
 /*three level */
 router.get('/detail', function(req, res, next) {
-  res.render('detail',{ title: 'webGL' });
+  res.render('detail',{ title: '莫干山度假酒店' });
 });
 
 router.get('/webgl', function(req, res, next) {
-  res.render('webgl',{ title: 'webGL' });
+  res.render('webgl',{ title: '莫干山度假酒店' });
 });
 
 router.get('/loop', function(req, res, next) {
@@ -46,16 +68,18 @@ router.get('/loop', function(req, res, next) {
 });
 
 router.get('/pano', function(req, res, next) {
-  res.render('pano');
+  res.render('pano',{ title: '莫干山度假酒店' });
 });
 
 router.get('/project1/pano', function(req, res, next) {
-  res.render('pano/pano');
+  res.render('pano/pano',{ title: '莫干山度假酒店' });
 });
 
 router.get('/default', function(req, res, next) {
   res.render('default');
 });
-
+router.get('/common', function(req, res, next) {
+  res.render('default');
+});
 
 module.exports = router;

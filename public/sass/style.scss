@@ -23,28 +23,31 @@ $backgroud:rgb(237,238,239);
 .waterfall{
     padding-top: 0px;
 }
-.project-waterfall{
-    
-}
 
 .social-position,.share-link{
-    padding:0.8em;
+    bottom:4em;
+    width: 121px;
+    max-width: 121px;
     position:absolute;
     background-color: #fff;  
     border-radius: 6px;
     box-shadow: 0 3px 9px rgba(0,0,0,.5);
 }
 .social-position{
-    z-index: 100;
-    margin-top: -6.4em;
+    z-index: 100; 
+    margin-right: 0.5em;
     right: 0;
-    max-width:151px;
+    
 }
 .share-link{
-    margin-top: -7.2em;
-    left:48%;
-    width:30%;
+    padding: 2px 0;
+    padding-left: 0;
+    left:37%; 
     border:1px solid $maincolor;
+    ol{
+      padding-left:2.5em;
+      padding-right:2px;
+    }
 }
 
 /*
@@ -53,13 +56,13 @@ $backgroud:rgb(237,238,239);
 */
 
 .m_logo{
-     margin-left: 12px;
+     margin-left: 0px;
     }
 
 .mininav{
     background-color: #fff;
     border-bottom:1px solid $maincolor;
-    border-radius: 8px 9px 1px 1px;
+    border-radius: 8px 8px 1px 1px;
     position: sticky;
     top: 0px;
     will-change: transform;
@@ -69,7 +72,6 @@ $backgroud:rgb(237,238,239);
      height:35px;
     }
 }
-
 /*
 *
 * seconde page
@@ -80,15 +82,14 @@ $backgroud:rgb(237,238,239);
 }
 .secondpage{
     background-color: #fff;
-    border-top: 10px  solid #fff ;
-    border-bottom: 10px  solid #fff;
+    border-bottom: 1px  solid #fff;
     border-radius: 15px;
     margin-top: 15px;
 }
 .minifoot{
     background-color: #fff;
-    border-top:1px solid $maincolor;
-    padding-top: 0.5em;
+    border-top:1px solid $maincolor; 
+    border-radius: 1px 1px 8px 8px;
     img{
      width:30px;
      height:30px;
@@ -162,9 +163,18 @@ $backgroud:rgb(237,238,239);
    position: fixed;
 }
 .center-icon{
-   left:45%;
+   left:46%;
    position: fixed;
 }
+
+.rotate90{
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+
+
 @media (min-width: 555px) and (max-width:1000px) {
     .bottom-icon{
         top:76%!important;
@@ -187,3 +197,5 @@ $backgroud:rgb(237,238,239);
         display: none
     }
 }
+
+

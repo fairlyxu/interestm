@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=0" charset="utf-8" />
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="description" content="mobile first, app, web app, responsive, admin dashboard, flat, flat ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/javascripts/4dage.js"></script>
+    <script src="js/ui/jquery.min.js"></script>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>Welcome to
+        <%= title %>
+    </p>
+    <section class="main padder">
+        <div class="row">
+            <div class="col-lg-8 col-sm-8 col-12">
+                <section class="panel" id="container">
+                    <script>
+                    var container = $("#container")
+                    w = container.width();
+                    h = 300;
+                    var fdage = Fdage.embed('/images/JGT.4dage', {
+                        width: w,
+                        height: h,
+                        autoStart: true,
+                        fullFrame: true,
+                        pagePreset: true
+                    });
+                    //添加跟随浏览器大小自适应场景组件
+                    window.addEventListener('resize', onWindowResize, false);
+                    //跟随浏览器大小自适应场景程序
+                    function onWindowResize() {
+                        var container = $("#container");
+                        w = container.width();
+                        h = 300;
+                        fdage.setWidth(w);
+                        fdage.setHeight(h); 
+                        
+                    }
+                    </script>
+                </section>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-12">
+                <section class="panel">
+                    col-lg-4
+                </section>
+            </div>
+        </div>
+    </section>
+ 
+</body>
+</html>

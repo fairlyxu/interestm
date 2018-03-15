@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node3">
+  <panorama id="node2">
+    <input width="2000" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/sun_pano_after/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="0.400" leveltilesize="510" height="2000" levelingroll="0" overlap="1">
+      <level width="2000" preload="0" height="2000" predecode="0"/>
+      <level width="1000" preload="0" height="1000" predecode="0"/>
+      <level width="500" preload="1" height="500" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" pan="0" fov="60"/>
+      <min tilt="-90" pan="0" fov="30"/>
+      <max tilt="90" pan="360" fov="90"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" longitude="" info="" comment="" title="" datetime="2017:10:18 19:35:26" tags="SUN" latitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label width="180" textcolor="0x000000" border="1" backgroundcolor="0xffffff" background="1" bordercolor="0x000000" textalpha="1" enabled="1" borderalpha="1" height="20" backgroundalpha="1" wordwrap="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0"/>
+      <hotspot description="" id="night_pano_after" tilt="3.24" target="20.5394/-0.627619/70" title="" pan="52.99" url="{node3}" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition softedge="0" zoomoutpause="1" type="crossdissolve" enabled="0" blendtime="1" zoomspeed="2" zoomfov="20" zoomin="0" blendcolor="0x000000" zoomout="0"/>
+    <autorotate nodedelay="60.00" noderandom="1" delay="0.00" returntohorizon="0.000" useanimation="0" startloaded="0" speed="-0.100"/>
+    <control lockedkeyboardzoom="0" lockedkeyboard="0" lockedmouse="0" simulatemass="1" invertcontrol="1" speedwheel="1" contextfullscreen="0" hideabout="0" lockedwheel="0" dblclickfullscreen="0" sensitivity="8" invertwheel="0"/>
+  </panorama>
+  <panorama id="node3">
+    <input width="2000" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/night_pano_after/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="0.400" leveltilesize="510" height="2000" levelingroll="0" overlap="1">
+      <level width="2000" preload="0" height="2000" predecode="0"/>
+      <level width="1000" preload="0" height="1000" predecode="0"/>
+      <level width="500" preload="1" height="500" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" pan="20" fov="60"/>
+      <min tilt="-90" pan="0" fov="30"/>
+      <max tilt="90" pan="360" fov="90"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" longitude="" info="" comment="" title="" datetime="2017:10:18 19:24:35" tags="NIGHT" latitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label width="180" textcolor="0x000000" border="1" backgroundcolor="0xffffff" background="1" bordercolor="0x000000" textalpha="1" enabled="1" borderalpha="1" height="20" backgroundalpha="1" wordwrap="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.2509803921568627" mode="0"/>
+      <hotspot description="" id="sun_pano_after" tilt="-5.23" target="0.499332/2.2048/70" title="" pan="23.9" url="{node2}" skinid="ht_node"/>
+    </hotspots>
+    <media>
+      <sound level="1.000" field="40.000" loop="0" pansize="180.000" id="Element01" tilt="-1.970" tiltsize="10.000" pan="36.740" mode="1" ambientlevel="0.000">
+        <source url="media/river01.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomoutpause="1" type="crossdissolve" enabled="0" blendtime="1" zoomspeed="2" zoomfov="20" zoomin="0" blendcolor="0x000000" zoomout="0"/>
+    <autorotate nodedelay="60.00" noderandom="1" delay="0.00" returntohorizon="0.000" useanimation="0" startloaded="0" speed="-0.100"/>
+    <control lockedkeyboardzoom="0" lockedkeyboard="0" lockedmouse="0" simulatemass="1" invertcontrol="1" speedwheel="1" contextfullscreen="0" hideabout="0" lockedwheel="0" dblclickfullscreen="0" sensitivity="8" invertwheel="0"/>
+  </panorama>
+</tour>

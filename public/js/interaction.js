@@ -1,3 +1,4 @@
+DATAURL = 'http://www.interestm.com:8090';
 // socail-share
 var initSocial = function (div){
   var $config = {
@@ -18,7 +19,6 @@ var show = function(divmodel){
   }
   else{
       $link.hide(600)
-     
   }  
 }
 /* input userId
@@ -37,7 +37,8 @@ var checkLogin = function(userId){
 var reqData = function(interfaceurl){
   var resultdata;
     $.ajax({
-            url:'http://127.0.0.1:3333/'+interfaceurl,//common_image,
+            url:DATAURL +interfaceurl,//common_image,
+            //url:"http://127.0.0.1:3333/get_project_list",
             type:'get',
             async: false, // 同步
             dataType:'json',
@@ -52,7 +53,6 @@ var reqData = function(interfaceurl){
         })
     return resultdata;
 }
-
 // get url parameters
 var  getQueryString = function(url){
     tmp = url || window.location.href;
@@ -65,7 +65,7 @@ var  getQueryString = function(url){
 
 // 保存后反馈窗口
 var save = function(titleTxt,conTxt){
-  titleTxt = '牛逼闪闪的标题';
+  titleTxt = '莫干山度假酒店';
   conTxt =  '<p>收藏成功.</p>';
  new show_modal({modalId:'alert_like',titleTxt:titleTxt,modalCon:conTxt ,bootstrapOptionObj:{show:true,backdrop:false},callback:timeClose()});
 }
