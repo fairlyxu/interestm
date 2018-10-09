@@ -14,9 +14,7 @@ exports.find = function(req, url, success){
         res.on('data', function (data) {
             str += data;
         });
-        res.on('end', function(){
-            //console.log('~~~~~~~~~~>> >>')
-            //console.log(str)
+        res.on('end', function(){ 
             success(JSON.parse(str));
         })
           
